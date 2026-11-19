@@ -1,0 +1,28 @@
+.meetings-page__title {
+    font-weight: 800 !important;
+    color: #1e293b;
+    margin-bottom: 18px !important;
+}
+
+.meetings-page__select-wrapper {
+    max-width: 340px;
+    margin-bottom: 28px;
+}
+
+.meetings-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+}
+
+.meetings-page__empty {
+    color: #64748b;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.meetings-page__loading {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}

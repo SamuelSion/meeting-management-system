@@ -1,0 +1,11 @@
+.edit-meeting-page__title {
+    font-weight: 800 !important;
+    color: #1e293b;
+    margin-bottom: 20px !important;
+}
+
+.edit-meeting-page__loading {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}

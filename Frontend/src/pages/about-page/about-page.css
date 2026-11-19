@@ -1,0 +1,57 @@
+.about-page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-page__title {
+    font-weight: 800 !important;
+    color: #1e293b;
+    margin-bottom: 18px !important;
+    text-align: center;
+}
+
+.about-page__section {
+    border-radius: 14px !important;
+    padding: 24px !important;
+    margin-bottom: 22px !important;
+}
+
+.about-page__section-title {
+    font-weight: 700 !important;
+    color: #1e293b;
+    margin-bottom: 10px !important;
+}
+
+.about-page__paragraph {
+    color: #475569;
+    line-height: 1.9;
+}
+
+.about-page__developer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-page__avatar {
+    width: 96px !important;
+    height: 96px !important;
+    font-size: 2rem !important;
+    background-color: #2563eb !important;
+}
+
+.about-page__developer-info {
+    flex: 1 1 260px;
+}
+
+.about-page__developer-name {
+    font-weight: 700 !important;
+    color: #1e293b;
+}
+
+.about-page__developer-role {
+    color: #64748b;
+    margin-bottom: 8px !important;
+}

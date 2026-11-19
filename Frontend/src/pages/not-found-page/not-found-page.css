@@ -1,0 +1,25 @@
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.not-found-page__code {
+    font-size: 5rem !important;
+    font-weight: 800 !important;
+    color: #f97316;
+    line-height: 1;
+}
+
+.not-found-page__title {
+    font-weight: 700 !important;
+    color: #1e293b;
+    margin: 12px 0 8px !important;
+}
+
+.not-found-page__text {
+    color: #64748b;
+    margin-bottom: 24px !important;
+}
