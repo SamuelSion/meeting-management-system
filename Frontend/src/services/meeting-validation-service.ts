@@ -54,7 +54,7 @@ class MeetingValidationService {
             const startTime = new Date(fields.startDateTime).getTime();
             const endTime = new Date(fields.endDateTime).getTime();
             if (startTime >= endTime) {
-                errors.endDateTime = "זמן הסיום חיי9ב להיות מאוחר יותר מזמן ההתחלה.";
+                errors.endDateTime = "זמן הסיום חייב להיות מאוחר יותר מזמן ההתחלה.";
             }
         }
 
