@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "ed976a06-e79f-494d-bcb5-93ca2f20a814",
+    "name": "Meeting Management System - API",
+    "description": "REST API for managing development groups' meetings. Backend: Node.js + Express + TypeScript + MongoDB/Mongoose.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Development Groups",
+      "item": [
+        {
+          "name": "Get all development groups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dev-groups",
+              "host": ["{{baseUrl}}"],
+              "path": ["dev-groups"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Meetings",
+      "item": [
+        {
+          "name": "Get meetings by development group",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/meetings/dev-group/{{devGroupId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["meetings", "dev-group", "{{devGroupId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get one meeting by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/meetings/{{meetingId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["meetings", "{{meetingId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add a new meeting",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"devGroupId\": \"{{devGroupId}}\",\n    \"startDateTime\": \"2027-01-10T10:00:00.000Z\",\n    \"endDateTime\": \"2027-01-10T11:00:00.000Z\",\n    \"description\": \"Sprint planning meeting\",\n    \"room\": \"Blue Room\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/meetings",
+              "host": ["{{baseUrl}}"],
+              "path": ["meetings"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update an existing meeting",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"devGroupId\": \"{{devGroupId}}\",\n    \"startDateTime\": \"2027-01-10T12:00:00.000Z\",\n    \"endDateTime\": \"2027-01-10T13:00:00.000Z\",\n    \"description\": \"Sprint planning meeting - updated\",\n    \"room\": \"Green Room\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/meetings/{{meetingId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["meetings", "{{meetingId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete an existing meeting",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/meetings/{{meetingId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["meetings", "{{meetingId}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:4000/api" },
+    { "key": "devGroupId", "value": "" },
+    { "key": "meetingId", "value": "" }
+  ]
+}

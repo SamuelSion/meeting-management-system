@@ -1,0 +1,26 @@
+[
+    {
+        "_id": { "$oid": "6a856a0bcfc030c9448fc581" },
+        "devGroupId": { "$oid": "6a856a0bcfc030c9448fc57d" },
+        "startDateTime": { "$date": "2026-08-25T10:00:00.000Z" },
+        "endDateTime": { "$date": "2026-08-25T11:00:00.000Z" },
+        "description": "Test plan review for the payments module",
+        "room": "Green Room"
+    },
+    {
+        "_id": { "$oid": "6a856a0bcfc030c9448fc582" },
+        "devGroupId": { "$oid": "6a856a0bcfc030c9448fc57e" },
+        "startDateTime": { "$date": "2026-08-26T09:00:00.000Z" },
+        "endDateTime": { "$date": "2026-08-26T10:00:00.000Z" },
+        "description": "Architecture review for the new search service",
+        "room": "Orange Room"
+    },
+    {
+        "_id": { "$oid": "6a856c4b71c82133ee8ae3b0" },
+        "devGroupId": { "$oid": "6a856a0bcfc030c9448fc57f" },
+        "startDateTime": { "$date": "2026-09-01T10:00:00.000Z" },
+        "endDateTime": { "$date": "2026-09-01T11:00:00.000Z" },
+        "description": "Sprint planning meeting",
+        "room": "Blue Room"
+    }
+]
